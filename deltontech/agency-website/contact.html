@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Delton Technologies</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { dark: '#120505', primary: '#DC2626', accent: '#EF4444' },
+          fontFamily: { sans: ['Inter', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body class="gradient-bg min-h-screen flex flex-col font-sans antialiased text-white overflow-x-hidden">
+  <!-- Navbar Shell -->
+  <header class="fixed w-full top-0 z-50 bg-[#120505] shadow-xl border-b border-white/10 transition-all duration-300">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="flex items-center gap-3 md:gap-4 group">
+        <!-- DT Logo -->
+        <svg viewBox="0 0 100 100" class="w-10 h-10 md:w-12 md:h-12 drop-shadow-[0_0_10px_rgba(253,255,245,0.3)] transition-transform duration-300 group-hover:scale-105">
+          <!-- D Path -->
+          <path d="M15 10 h35 c25 0, 40 18, 40 40 c0 22, -15 40, -40 40 h-35 v-80 z" fill="#FDFFF5" opacity="0.2"/>
+          <!-- T Path -->
+          <path d="M0 0 h70 v22 h-24 v78 h-22 v-78 h-24 z" fill="#FDFFF5"/>
+        </svg>
+        <div class="inline-flex flex-col w-min">
+  <h1 class="text-2xl font-bold tracking-tight text-white whitespace-nowrap">
+    DELTON TECHNOLOGIES
+  </h1>
+  <p class="text-[0.5rem] flex justify-between uppercase text-white/80">
+    <span>H</span><span>E</span><span>R</span><span>E</span> &nbsp; 
+    <span>I</span><span>S</span> &nbsp; 
+    <span>Y</span><span>O</span><span>U</span><span>R</span> &nbsp; 
+    <span>S</span><span>O</span><span>L</span><span>U</span><span>T</span><span>I</span><span>O</span><span>N</span> &nbsp; 
+    <span>P</span><span>A</span><span>R</span><span>T</span><span>N</span><span>E</span><span>R</span>
+  </p>
+</div>
+      </a>
+      <nav class="hidden md:flex space-x-8 items-center">
+        <a href="index.html" class="text-gray-300 hover:text-white transition-colors text-sm font-medium">Home</a>
+        <a href="about.html" class="text-gray-300 hover:text-white transition-colors text-sm font-medium">About</a>
+        <div class="relative group">
+          <button class="text-gray-300 hover:text-white transition-colors flex items-center gap-1 text-sm font-medium">
+            Services
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div
+            class="absolute left-0 mt-6 w-48 bg-[#120505] border border-white/10 rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 flex flex-col overflow-hidden shadow-2xl">
+            <a href="web-design.html" class="px-4 py-3 hover:bg-white/10 text-sm border-b border-white/5">Web Design</a>
+            <a href="marketing.html" class="px-4 py-3 hover:bg-white/10 text-sm border-b border-white/5">Digital
+              Marketing</a>
+            <a href="seo.html" class="px-4 py-3 hover:bg-white/10 text-sm border-b border-white/5">SEO Services</a>
+            <a href="mobile-apps.html" class="px-4 py-3 hover:bg-white/10 text-sm">App Development</a>
+          </div>
+        </div>
+        <a href="contact.html" class="text-primary transition-colors text-sm font-medium">Contact</a>
+      </nav>
+      <button class="md:hidden text-white focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow pt-32 pb-24 relative z-10">
+    <div class="container mx-auto px-6 max-w-5xl">
+      <div class="text-center mb-16 gsap-hero-fade">
+        <h1 class="text-5xl font-bold mb-4">Let's <span class="gradient-text">Connect</span></h1>
+        <p class="text-gray-400">Ready to start your digital journey? Drop us a line.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <!-- Contact Info & Map -->
+        <div>
+          <div class="glass p-8 rounded-2xl mb-8">
+            <h3 class="text-2xl font-bold mb-6 text-white">Contact Information</h3>
+            <div class="space-y-4">
+              <p class="flex items-center gap-3 text-gray-300">
+                <span
+                  class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary text-xl">📍</span>
+                123 Innovation Drive, Tech City, TX 78701
+              </p>
+              <p class="flex items-center gap-3 text-gray-300">
+                <span
+                  class="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center text-accent text-xl">📞</span>
+                +1 (555) 123-4567
+              </p>
+              <p class="flex items-center gap-3 text-gray-300">
+                <span
+                  class="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center text-green-400 text-xl">✉️</span>
+                hello@deltontechnologies.agency
+              </p>
+            </div>
+          </div>
+
+          <!-- Simplified Map placeholder (iframe Google maps can go here) -->
+          <div class="glass p-2 rounded-2xl overflow-hidden h-64 relative group">
+            <div
+              class="absolute inset-0 bg-dark/50 group-hover:bg-dark/20 transition-colors z-10 flex border border-white/10 rounded-xl items-center justify-center pointer-events-none">
+              <span class="px-4 py-2 glass rounded-lg text-sm text-white font-medium">Interactive Map</span>
+            </div>
+            <!-- Fake Map UI -->
+            <div
+              class="w-full h-full bg-[url('https://upload.wikimedia.org/wikipedia/commons/a/a9/OpenStreetMap_routing_interface.png')] bg-cover bg-center opacity-40">
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="glass p-8 rounded-2xl">
+          <h3 class="text-2xl font-bold mb-6 text-white">Send a Message</h3>
+          <form action="#" method="POST" class="space-y-5">
+            <div>
+              <label class="block text-sm font-medium text-gray-400 mb-1">Full Name</label>
+              <input type="text"
+                class="w-full bg-dark/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors"
+                placeholder="John Doe" required>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-400 mb-1">Email Address</label>
+              <input type="email"
+                class="w-full bg-dark/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors"
+                placeholder="john@example.com" required>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-400 mb-1">Phone (Optional)</label>
+              <input type="tel"
+                class="w-full bg-dark/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors"
+                placeholder="+1 (555) 000-0000">
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-400 mb-1">Your Message</label>
+              <textarea rows="4"
+                class="w-full bg-dark/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors"
+                placeholder="How can we help you?" required></textarea>
+            </div>
+            <button type="submit"
+              class="w-full bg-primary hover:bg-primary/90 text-white font-medium rounded-lg px-4 py-3 transition-colors shadow-lg">Send
+              Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="glass border-t border-white/10 pt-16 pb-8 relative z-10">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <div class="col-span-1 md:col-span-2">
+          <a href="index.html" class="flex items-center gap-3 md:gap-4 group mb-6">
+            <!-- DT Logo -->
+            <svg viewBox="0 0 100 100" class="w-12 h-12 drop-shadow-[0_0_10px_rgba(253,255,245,0.3)] transition-transform duration-300 group-hover:scale-105">
+              <path d="M15 10 h35 c25 0, 40 18, 40 40 c0 22, -15 40, -40 40 h-35 v-80 z" fill="#FDFFF5" opacity="0.2"/>
+              <path d="M0 0 h70 v22 h-24 v78 h-22 v-78 h-24 z" fill="#FDFFF5"/>
+            </svg>
+            <div class="inline-flex flex-col w-min">
+  <h1 class="text-2xl font-bold tracking-tight text-white whitespace-nowrap">
+    DELTON TECHNOLOGIES
+  </h1>
+  <p class="text-[0.5rem] flex justify-between uppercase text-white/80">
+    <span>H</span><span>E</span><span>R</span><span>E</span> &nbsp; 
+    <span>I</span><span>S</span> &nbsp; 
+    <span>Y</span><span>O</span><span>U</span><span>R</span> &nbsp; 
+    <span>S</span><span>O</span><span>L</span><span>U</span><span>T</span><span>I</span><span>O</span><span>N</span> &nbsp; 
+    <span>P</span><span>A</span><span>R</span><span>T</span><span>N</span><span>E</span><span>R</span>
+  </p>
+</div>
+          </a>
+          <p class="text-gray-400 max-w-sm mb-6">Designing the future of digital experiences for forward-thinking brands
+            worldwide.</p>
+          <div class="flex space-x-4">
+            <a href="#"
+              class="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-colors">𝕏</a>
+            <a href="#"
+              class="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-colors">in</a>
+            <a href="#"
+              class="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-colors">ig</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4 text-white">Services</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="web-design.html" class="hover:text-primary transition-colors">Web Design</a></li>
+            <li><a href="marketing.html" class="hover:text-primary transition-colors">Digital Marketing</a></li>
+            <li><a href="seo.html" class="hover:text-primary transition-colors">SEO Services</a></li>
+            <li><a href="mobile-apps.html" class="hover:text-primary transition-colors">App Development</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4 text-white">Company</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="about.html" class="hover:text-primary transition-colors">About Us</a></li>
+            <li><a href="contact.html" class="hover:text-primary transition-colors">Contact</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center text-gray-500 text-sm border-t border-white/5 pt-8">
+        &copy; 2026 Delton Technologies. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

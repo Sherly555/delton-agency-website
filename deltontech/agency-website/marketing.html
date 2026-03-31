@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Marketing | Delton Technologies</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { dark: '#120505', primary: '#DC2626', accent: '#EF4444' },
+          fontFamily: { sans: ['Inter', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body class="gradient-bg min-h-screen flex flex-col font-sans antialiased text-white overflow-x-hidden">
+  <!-- Navbar Shell -->
+  <header class="fixed w-full top-0 z-50 bg-[#120505] shadow-xl border-b border-white/10 transition-all duration-300">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="flex items-center gap-3 md:gap-4 group">
+        <!-- DT Logo -->
+        <svg viewBox="0 0 100 100" class="w-10 h-10 md:w-12 md:h-12 drop-shadow-[0_0_10px_rgba(253,255,245,0.3)] transition-transform duration-300 group-hover:scale-105">
+          <!-- D Path -->
+          <path d="M15 10 h35 c25 0, 40 18, 40 40 c0 22, -15 40, -40 40 h-35 v-80 z" fill="#FDFFF5" opacity="0.2"/>
+          <!-- T Path -->
+          <path d="M0 0 h70 v22 h-24 v78 h-22 v-78 h-24 z" fill="#FDFFF5"/>
+        </svg>
+       <div class="inline-flex flex-col w-min">
+  <h1 class="text-2xl font-bold tracking-tight text-white whitespace-nowrap">
+    DELTON TECHNOLOGIES
+  </h1>
+  <p class="text-[0.5rem] flex justify-between uppercase text-white/80">
+    <span>H</span><span>E</span><span>R</span><span>E</span> &nbsp; 
+    <span>I</span><span>S</span> &nbsp; 
+    <span>Y</span><span>O</span><span>U</span><span>R</span> &nbsp; 
+    <span>S</span><span>O</span><span>L</span><span>U</span><span>T</span><span>I</span><span>O</span><span>N</span> &nbsp; 
+    <span>P</span><span>A</span><span>R</span><span>T</span><span>N</span><span>E</span><span>R</span>
+  </p>
+</div>
+      </a>
+      <nav class="hidden md:flex space-x-8 items-center">
+        <a href="index.html" class="text-gray-300 hover:text-white transition-colors text-sm font-medium">Home</a>
+        <a href="about.html" class="text-gray-300 hover:text-white transition-colors text-sm font-medium">About</a>
+        <div class="relative group">
+          <button class="text-white flex items-center gap-1 text-sm font-medium">
+            Services
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div
+            class="absolute left-0 mt-6 w-48 bg-[#120505] border border-white/10 rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 flex flex-col overflow-hidden shadow-2xl">
+            <a href="web-design.html" class="px-4 py-3 hover:bg-white/10 text-sm border-b border-white/5">Web Design</a>
+            <a href="marketing.html" class="px-4 py-3 bg-white/10 text-sm border-b border-white/5">Digital Marketing</a>
+            <a href="seo.html" class="px-4 py-3 hover:bg-white/10 text-sm border-b border-white/5">SEO Services</a>
+            <a href="mobile-apps.html" class="px-4 py-3 hover:bg-white/10 text-sm">App Development</a>
+          </div>
+        </div>
+        <a href="contact.html" class="text-gray-300 hover:text-white transition-colors text-sm font-medium">Contact</a>
+      </nav>
+      <a href="contact.html"
+        class="hidden md:block px-6 py-2.5 bg-[#FDFFF5] text-[#120505] hover:bg-white rounded-full text-sm font-bold transition-transform hover:scale-105 shadow-[0_0_15px_rgba(253,255,245,0.4)]">Get
+        Started</a>
+      <button class="md:hidden text-white focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow pt-32 pb-24 relative z-10">
+    <div class="container mx-auto px-6 max-w-6xl">
+      <div class="text-center max-w-3xl mx-auto mb-16 gsap-hero-fade">
+        <h1 class="text-5xl font-bold mb-6">Data-Driven <br /><span class="gradient-text">Digital Marketing</span></h1>
+        <p class="text-xl text-gray-400">Transform clicks into customers. We build measurable marketing campaigns
+          engineered for explosive growth.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+        <div
+          class="glass p-8 rounded-2xl hover:-translate-y-2 transition-transform duration-300 border-t border-accent/20">
+          <div class="text-4xl mb-4">📱</div>
+          <h3 class="text-xl font-bold mb-3">Social Media</h3>
+          <p class="text-gray-400 text-sm">Engaging campaigns across Instagram, LinkedIn, and TikTok that build loyal
+            communities around your brand.</p>
+        </div>
+        <div
+          class="glass p-8 rounded-2xl hover:-translate-y-2 transition-transform duration-300 border-t border-primary/20">
+          <div class="text-4xl mb-4">✍️</div>
+          <h3 class="text-xl font-bold mb-3">Content Strategy</h3>
+          <p class="text-gray-400 text-sm">High-value blog posts, videos, and copywriting that establish your authority
+            and generate organic leads.</p>
+        </div>
+        <div
+          class="glass p-8 rounded-2xl hover:-translate-y-2 transition-transform duration-300 border-t border-yellow-500/20">
+          <div class="text-4xl mb-4">✉️</div>
+          <h3 class="text-xl font-bold mb-3">Email Campaigns</h3>
+          <p class="text-gray-400 text-sm">Automated nurturing funnels designed to re-engage past customers and convert
+            new subscribers.</p>
+        </div>
+      </div>
+
+      <div class="glass p-12 rounded-3xl relative overflow-hidden">
+        <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary via-accent to-yellow-500"></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl font-bold mb-6">Our Strategy Framework</h2>
+            <p class="text-gray-300 mb-6">We don't guess. We analyze market data to pinpoint exactly where your target
+              audience spends their time and money.</p>
+            <ul class="space-y-4">
+              <li class="flex items-center gap-3"><span class="text-primary">✓</span> Audience Profiling</li>
+              <li class="flex items-center gap-3"><span class="text-primary">✓</span> Cross-Channel Integration</li>
+              <li class="flex items-center gap-3"><span class="text-primary">✓</span> A/B Testing & Optimization</li>
+              <li class="flex items-center gap-3"><span class="text-primary">✓</span> Transparent ROI Reporting</li>
+            </ul>
+          </div>
+          <div class="relative h-64 glass rounded-xl flex items-end justify-between p-6 overflow-hidden">
+            <div class="w-1/6 bg-primary/20 hover:bg-primary transition-colors h-1/4 rounded-t-md"></div>
+            <div class="w-1/6 bg-primary/40 hover:bg-primary transition-colors h-2/4 rounded-t-md"></div>
+            <div class="w-1/6 bg-accent/60 hover:bg-accent transition-colors h-3/4 rounded-t-md"></div>
+            <div class="w-1/6 bg-accent hover:bg-accent/80 transition-colors h-full rounded-t-md"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="glass border-t border-white/10 pt-16 pb-8 relative z-10">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <div class="col-span-1 md:col-span-2">
+          <a href="index.html" class="flex items-center gap-3 md:gap-4 group mb-6">
+            <!-- DT Logo -->
+            <svg viewBox="0 0 100 100" class="w-12 h-12 drop-shadow-[0_0_10px_rgba(253,255,245,0.3)] transition-transform duration-300 group-hover:scale-105">
+              <path d="M15 10 h35 c25 0, 40 18, 40 40 c0 22, -15 40, -40 40 h-35 v-80 z" fill="#FDFFF5" opacity="0.2"/>
+              <path d="M0 0 h70 v22 h-24 v78 h-22 v-78 h-24 z" fill="#FDFFF5"/>
+            </svg>
+            <div class="inline-flex flex-col w-min">
+  <h1 class="text-2xl font-bold tracking-tight text-white whitespace-nowrap">
+    DELTON TECHNOLOGIES
+  </h1>
+  <p class="text-[0.5rem] flex justify-between uppercase text-white/80">
+    <span>H</span><span>E</span><span>R</span><span>E</span> &nbsp; 
+    <span>I</span><span>S</span> &nbsp; 
+    <span>Y</span><span>O</span><span>U</span><span>R</span> &nbsp; 
+    <span>S</span><span>O</span><span>L</span><span>U</span><span>T</span><span>I</span><span>O</span><span>N</span> &nbsp; 
+    <span>P</span><span>A</span><span>R</span><span>T</span><span>N</span><span>E</span><span>R</span>
+  </p>
+</div>
+          </a>
+          <p class="text-gray-400 max-w-sm mb-6">Designing the future of digital experiences for forward-thinking brands
+            worldwide.</p>
+          <div class="flex space-x-4">
+            <a href="#"
+              class="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-colors">𝕏</a>
+            <a href="#"
+              class="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-colors">in</a>
+            <a href="#"
+              class="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-colors">ig</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4 text-white">Services</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="web-design.html" class="hover:text-primary transition-colors">Web Design</a></li>
+            <li><a href="marketing.html" class="hover:text-primary transition-colors">Digital Marketing</a></li>
+            <li><a href="seo.html" class="hover:text-primary transition-colors">SEO Services</a></li>
+            <li><a href="mobile-apps.html" class="hover:text-primary transition-colors">App Development</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4 text-white">Company</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="about.html" class="hover:text-primary transition-colors">About Us</a></li>
+            <li><a href="contact.html" class="hover:text-primary transition-colors">Contact</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center text-gray-500 text-sm border-t border-white/5 pt-8">
+        &copy; 2026 Delton Technologies. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

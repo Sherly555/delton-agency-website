@@ -1,0 +1,34 @@
+/* Custom CSS extensions for Tailwind CDN */
+html {
+    font-size: 20px;
+}
+
+body {
+    background-color: #120505;
+    font-family: "Times New Roman", Times, serif !important;
+    letter-spacing: 0.04em;
+}
+
+h1, h2, h3, h4, h5, h6,
+h1 *, h2 *, h3 *, h4 *, h5 *, h6 * {
+    font-family: "Inter", sans-serif !important;
+}
+
+.glass {
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.gradient-text {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #DC2626, #EF4444);
+}
+
+.gradient-bg {
+    background-image: linear-gradient(to bottom right, #120505, #2a0a0a, #120505);
+}

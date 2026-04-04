@@ -32,3 +32,165 @@ h1 *, h2 *, h3 *, h4 *, h5 *, h6 * {
 .gradient-bg {
     background-image: linear-gradient(to bottom right, #120505, #2a0a0a, #120505);
 }
+.typing-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  line-height: 1.3;   /* ✅ fix */
+    padding-bottom: 6px;
+  animation: typing 1.5s steps(9) forwards,blink 0.7s  ;
+}
+
+/* keep gradient visible */
+.typing-text .gradient-text {
+  background: linear-gradient(to right, #ef4444, #dc2626);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+.typing-connect {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  line-height: 1.3;
+  padding-bottom: 6px;
+  animation: typing-connect 2.5s steps(13) forwards;
+}
+
+/* keep gradient working */
+.typing-connect .gradient-text {
+  background: linear-gradient(to right, #ef4444, #dc2626);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes typing-connect {
+  from { width: 0 }
+  to { width: 100% }
+}
+/* LINE 1 */
+.typing-line1 {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing1 2s steps(12) forwards;
+}
+
+/* LINE 2 (starts AFTER line 1) */
+.typing-line2 {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing2 2.5s steps(18) forwards;
+  animation-delay: 2s;   /* 🔥 delay = after line1 */
+}
+
+/* Gradient */
+.typing-line2 .gradient-text {
+  background: linear-gradient(to right, #ef4444, #dc2626);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Keyframes */
+@keyframes typing1 {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes typing2 {
+  from { width: 0 }
+  to { width: 100% }
+}
+/* LINE 1 */
+.typing-search-line1 {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing1 1.5s steps(10) forwards;
+}
+
+.typing-search-line2 {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing2 2s steps(20) forwards;
+  animation-delay: 1.5s;
+}
+
+@keyframes typing1 {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes typing2 {
+  from { width: 0 }
+  to { width: 100% }
+}
+.typing-web-line1 {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing1 1.8s steps(15) forwards;
+}
+
+.typing-web-line2 {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing2 1.8s steps(12) forwards;
+  animation-delay: 1.8s;
+}
+
+@keyframes typing1 {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes typing2 {
+  from { width: 0 }
+  to { width: 100% }
+}
+/* LINE 1 */
+.typing-app-line1 {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  line-height: 1.3;
+  animation: typing-app1 2.2s steps(22) forwards;
+}
+
+/* LINE 2 */
+.typing-app-line2 {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  line-height: 1.3;
+  animation: typing-app2 2s steps(11) forwards;
+  animation-delay: 2.2s; /* starts after line1 */
+}
+
+/* Keyframes */
+@keyframes typing-app1 {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes typing-app2 {
+  from { width: 0 }
+  to { width: 100% }
+}

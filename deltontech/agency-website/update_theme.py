@@ -2,7 +2,7 @@ import os
 import glob
 import re
 
-html_files = glob.glob(r'c:\Users\dell\Desktop\myweb\agency-website\*.html')
+html_files = glob.glob(r'c:\Users\Sherlyjennifer\Downloads\deltontech (1)\deltontech\agency-website\*.html')
 
 for filepath in html_files:
     with open(filepath, 'r', encoding='utf-8') as f:
